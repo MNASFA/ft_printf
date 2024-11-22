@@ -59,5 +59,6 @@ int	ft_printf(const char *format, ...)
 			count += ft_putchar(*format);
 		format++;
 	}
+	va_end (args);
 	return (count);
 }
